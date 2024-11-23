@@ -5,10 +5,12 @@
     padding: 0;
     box-sizing: border-box;
   }
-  
+  @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Playfair+Display:wght@400;700&display=swap');
+
+ 
   /* Fonts and Colors */
   body {
-    font-family: Arial, sans-serif;
+    font-family: 'Montserrat', sans-serif;
     color: #2f2f2f;
     background-color: #f5f5f5;
   }
@@ -64,27 +66,55 @@
     text-align: center;
 }
 
-.hero-content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 15px; /* Add spacing between elements */
-}
-
 .hero-content img {
-  float: left;
-  width: 50%; /* Set image width */
-  height: auto;
+  width: 50%;
   max-width: 400px;
   border-radius: 8px;
 }
 
-.about {
-  float: right;
-  width: 50%; /* Set image width */
-  height: auto;
-
+.hero-content {
+  flex-direction: row; /* Adjust layout to side-by-side */
+  align-items: center; /* Align content vertically */
+  gap: 20px; /* Add spacing between elements */
 }
+
+
+
+/* About Us Section */
+.aboutUs {
+  display: flex;
+  align-items: center; /* Vertically align items */
+  justify-content: space-between; /* Add spacing between image and text */
+  gap: 20px; /* Space between the image and text */
+  padding: 40px 20px;
+}
+
+.about-img {
+  width: 40%; /* Set the image width */
+  max-width: 400px; /* Limit the maximum width of the image */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 10px; /* Optional: Add rounded corners */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Add a shadow */
+}
+
+.about-content {
+  flex: 1; /* Allow the content to take the remaining space */
+  text-align: left; /* Align text to the left */
+}
+
+.about h2 {
+  font-size: 2em;
+  color: var(--green);
+  margin-bottom: 20px;
+}
+
+.about-text-box {
+  
+  padding: 20px;
+  
+}
+
+
 
 
   
@@ -265,7 +295,7 @@
     }
   }
 
-
+  
   
   
   /* Footer */
