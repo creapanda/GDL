@@ -78,6 +78,27 @@
   gap: 20px; /* Add spacing between elements */
 }
 
+.text-box {
+  padding: 20px 30px; /* Space inside the box */
+  text-align: center; /* Center the text inside the box */
+  max-width: 600px; /* Prevent the box from stretching too wide */
+  margin: -40px auto; /* Center the box horizontally and add spacing */
+}
+
+.text-box h1 {
+  margin: 0; /* Remove extra margin for better spacing */
+  color: var(--dark-green); /* Use a theme color for the heading */
+  font-size: 2rem; /* Adjust font size for a balanced appearance */
+}
+
+.text-box p {
+
+  color: #555; /* Use a softer color for the text */
+  line-height: 1.5; /* Improve readability */
+}
+
+
+
 
 
 /* About Us Section */
@@ -251,7 +272,7 @@
   .contact-content img {
     width: 40%; /* Set image width */
     max-width: 400px;
-    border-radius: 8px;
+    border-radius: 45%;
   }
   
   .contact-info {
